@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useStoreState, useStoreActions } from 'easy-peasy';
 
 const Register = () => {
@@ -53,6 +53,7 @@ const Register = () => {
         {apiError && <label className='error-msg'>{apiError}</label>}
         <button type='submit'>Register</button>
       </form>
+      <Link to={'/login'}><button>Login</button></Link>
     </main>
   )
 }

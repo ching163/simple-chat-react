@@ -53,6 +53,7 @@ const Login = () => {
                 {apiError && <label className='error-msg'>{apiError}</label>}
                 <button type='submit'>Login</button>
             </form>
+            <Link to={'/register'}><button>Register</button></Link>
         </main>
     )
 }
